@@ -1,4 +1,6 @@
 
+#Two player interactable tic tac toe game that operates on user input
+
 def display_board(board):
     print(board[7] + '|' + board[8] + '|' + board[9])
     print(board[4] + '|' + board[5] + '|' + board[6])
@@ -51,7 +53,7 @@ def full_check(board):
 
 
 
-# randomly deciding which player goes first in the game
+# randomly deciding which player goes first in the game using random module
 import random
 def first_player():
     if random.randint(0, 1) == 0:
